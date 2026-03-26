@@ -11,13 +11,14 @@
     </paths>
 
     <version number="1.0.0">
+        <folder>latest</folder>
         <api format="php">
             <source dsn=".">
                 <path>src</path>
             </source>
             <ignore hidden="true" symlinks="true">
                 <path>vendor</path>
-                <path>src/tests</path>
+                <path>tests</path>
                 <path>node_modules</path>
                 <path>*.blade.php</path>
             </ignore>

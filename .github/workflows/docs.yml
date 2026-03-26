@@ -41,15 +41,12 @@ jobs:
           chmod +x phpDocumentor.phar
 
       - name: Generate API documentation
-        run: |
-          php phpDocumentor.phar --config phpdoc.xml
-          echo "📂 PHPDocumentor output:"
-          find docs/api -type f | head -20 || echo "⚠️  docs/api is empty or missing"
+        run: php phpDocumentor.phar --config phpdoc.xml
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/api
+          path: docs/api/latest
 
   deploy:
     name: Deploy to GitHub Pages

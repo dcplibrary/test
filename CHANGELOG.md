@@ -1,3 +1,10 @@
+# 1.0.0 (2026-03-26)
+
+
+### Features
+
+* initial package scaffold for dcplibrary/test ([9c78902](https://github.com/dcplibrary/test/commit/9c78902b14f2ad98597fde1437a1ec3410dcc9f2))
+
 # Changelog
 
 All notable changes to `dcplibrary/test` will be documented in this file.

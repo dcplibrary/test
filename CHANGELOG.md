@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/dcplibrary/test/compare/v1.0.0...v1.0.1) (2026-03-26)
+
+
+### Bug Fixes
+
+* add .gitkeep so Feature test directory exists on CI ([9976dfb](https://github.com/dcplibrary/test/commit/9976dfb5f87bc9e2aeb35299259a94dd03c009a5))
+
 # 1.0.0 (2026-03-26)
 
 

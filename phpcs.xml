@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="test">
+    <description>PHP_CodeSniffer ruleset for dcplibrary/test</description>
+
+    <!-- Source to scan -->
+    <file>src</file>
+
+    <!-- Exclusions -->
+    <exclude-pattern>src/resources/*</exclude-pattern>
+    <exclude-pattern>src/database/*</exclude-pattern>
+    <exclude-pattern>vendor/*</exclude-pattern>
+    <exclude-pattern>node_modules/*</exclude-pattern>
+
+    <!-- Standards -->
+    <rule ref="PSR12"/>
+
+    <!-- Show progress and colours -->
+    <arg name="colors"/>
+    <arg value="p"/>
+
+    <!-- PHP version -->
+    <config name="php_version" value="80200"/>
+</ruleset>

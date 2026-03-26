@@ -54,7 +54,7 @@ auth.json
 
 # ── PHPDocumentor ─────────────────────────────────────────────────────────────
 .phpdoc/
-docs/api/
+build/phpdoc/
 phpDocumentor.phar
 
 # ── PHPUnit ───────────────────────────────────────────────────────────────────

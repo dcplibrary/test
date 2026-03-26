@@ -6,19 +6,18 @@
     xsi:noNamespaceSchemaLocation="https://docs.phpdoc.org/latest/phpdoc.xsd"
 >
     <paths>
-        <output>docs/api</output>
+        <output>build/phpdoc</output>
         <cache>.phpdoc/cache</cache>
     </paths>
 
     <version number="1.0.0">
-        <folder>latest</folder>
         <api format="php">
             <source dsn=".">
                 <path>src</path>
             </source>
             <ignore hidden="true" symlinks="true">
                 <path>vendor</path>
-                <path>tests</path>
+                <path>src/tests</path>
                 <path>node_modules</path>
                 <path>*.blade.php</path>
             </ignore>
@@ -26,7 +25,7 @@
                 <extension>php</extension>
             </extensions>
             <visibility>public</visibility>
-            <default-package-name>dcplibrary\test</default-package-name>
+            <default-package-name>Dcplibrary\Test</default-package-name>
             <include-source>true</include-source>
         </api>
     </version>

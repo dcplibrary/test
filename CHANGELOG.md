@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/dcplibrary/test/compare/v1.0.1...v1.0.2) (2026-03-26)
+
+
+### Bug Fixes
+
+* dependencies ([0f4dcf9](https://github.com/dcplibrary/test/commit/0f4dcf9f9fbe912df0536b50e2c59db3eed38fd4))
+* flatten PHPDoc output to docs/api, remove nested folder element ([510badf](https://github.com/dcplibrary/test/commit/510badf2d6236d87a7afe697b5c042a64689de4b))
+
 ## [1.0.1](https://github.com/dcplibrary/test/compare/v1.0.0...v1.0.1) (2026-03-26)
 
 

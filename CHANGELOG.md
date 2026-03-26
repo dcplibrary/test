@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/dcplibrary/test/compare/v1.0.2...v1.0.3) (2026-03-26)
+
+
+### Bug Fixes
+
+* align PHPDoc workflow with working pattern ([32c8f0f](https://github.com/dcplibrary/test/commit/32c8f0fc5f4f22408e78284cc1b96afe3d1034d5))
+
 ## [1.0.2](https://github.com/dcplibrary/test/compare/v1.0.1...v1.0.2) (2026-03-26)
 
 

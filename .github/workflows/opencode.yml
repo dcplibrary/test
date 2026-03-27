@@ -38,7 +38,7 @@ jobs:
                   "baseURL": "${{ secrets.LMSTUDIO_BASE_URL }}"
                 },
                 "models": {
-                  "qwen35": {
+                  "qwen35-9b": {
                     "name": "qwen/qwen3.5-9b"
                   }
                 }
@@ -47,9 +47,12 @@ jobs:
           }
           EOF
 
+      - name: Debug - show config
+        run: cat opencode.json
+
       - name: Run opencode
         uses: anomalyco/opencode/github@latest
         env:
           OPENAI_API_KEY: ${{ secrets.LMSTUDIO_API_KEY }}
         with:
-          model: lmstudio/qwen35
+          model: lmstudio/qwen35-9b

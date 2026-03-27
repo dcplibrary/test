@@ -18,23 +18,16 @@ jobs:
       id-token: write
       contents: read
       pull-requests: read
-      issues: write
+      issues: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
           persist-credentials: false
 
-      - name: Create opencode config
-        run: |
-          echo '{"$schema":"https://opencode.ai/config.json","provider":{"lmstudio":{"npm":"@ai-sdk/openai-compatible","name":"LM Studio","options":{"baseURL":"${{ secrets.LMSTUDIO_BASE_URL }}"},"models":{"qwen-coder-14b":{"name":"qwen/qwen2.5-coder-14b"}}}}}' > opencode.json
-
-      - name: Debug - show config
-        run: cat opencode.json && echo ""
-
       - name: Run opencode
         uses: anomalyco/opencode/github@latest
         env:
-          OPENAI_API_KEY: ${{ secrets.LMSTUDIO_API_KEY }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
         with:
-          model: lmstudio/qwen-coder-14b
+          model: opencode/big-pickle

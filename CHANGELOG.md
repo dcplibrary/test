@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/dcplibrary/test/compare/v1.1.0...v1.1.1) (2026-03-27)
+
+
+### Bug Fixes
+
+* change Denver to Daviess County Public Library" ([fabd69b](https://github.com/dcplibrary/test/commit/fabd69bd4689e80093af4b0e7045f6caf968337d))
+
 # [1.1.0](https://github.com/dcplibrary/test/compare/v1.0.4...v1.1.0) (2026-03-27)
 
 

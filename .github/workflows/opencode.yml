@@ -27,28 +27,10 @@ jobs:
 
       - name: Create opencode config
         run: |
-          cat > opencode.json << EOF
-          {
-            "\$schema": "https://opencode.ai/config.json",
-            "provider": {
-              "lmstudio": {
-                "npm": "@ai-sdk/openai-compatible",
-                "name": "LM Studio",
-                "options": {
-                  "baseURL": "${{ secrets.LMSTUDIO_BASE_URL }}"
-                },
-                "models": {
-                  "qwen35-9b": {
-                    "name": "qwen/qwen3.5-9b"
-                  }
-                }
-              }
-            }
-          }
-          EOF
+          echo '{"$schema":"https://opencode.ai/config.json","provider":{"lmstudio":{"npm":"@ai-sdk/openai-compatible","name":"LM Studio","options":{"baseURL":"${{ secrets.LMSTUDIO_BASE_URL }}"},"models":{"qwen35-9b":{"name":"qwen/qwen3.5-9b"}}}}}' > opencode.json
 
       - name: Debug - show config
-        run: cat opencode.json
+        run: cat opencode.json && echo ""
 
       - name: Run opencode
         uses: anomalyco/opencode/github@latest

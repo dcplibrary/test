@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/dcplibrary/test/compare/v1.1.2...v1.1.3) (2026-03-27)
+
+
+### Bug Fixes
+
+* update local lmstudio server url ([0674ded](https://github.com/dcplibrary/test/commit/0674ded93c5c431fa95363870f50cb6a217d9f36))
+
 ## [1.1.2](https://github.com/dcplibrary/test/compare/v1.1.1...v1.1.2) (2026-03-27)
 
 

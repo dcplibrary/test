@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/dcplibrary/test/compare/v1.1.3...v1.1.4) (2026-03-27)
+
+
+### Bug Fixes
+
+* switch to opencode zen ([585ea18](https://github.com/dcplibrary/test/commit/585ea1823c4db8cc81b71b339656746a3e9ed6f5))
+
 ## [1.1.3](https://github.com/dcplibrary/test/compare/v1.1.2...v1.1.3) (2026-03-27)
 
 

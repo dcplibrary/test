@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/dcplibrary/test/compare/v1.0.4...v1.1.0) (2026-03-27)
+
+
+### Bug Fixes
+
+* merge ([f822fb7](https://github.com/dcplibrary/test/commit/f822fb74068e4cc84efb2ed8a4ba91254ab30c3d))
+
+
+### Features
+
+* add opencode ([676166e](https://github.com/dcplibrary/test/commit/676166e8b4c9c747fae5d68781e8ab9c4f27a543))
+
 ## [1.0.4](https://github.com/dcplibrary/test/compare/v1.0.3...v1.0.4) (2026-03-26)
 
 

@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/dcplibrary/test/compare/v1.1.1...v1.1.2) (2026-03-27)
+
+
+### Bug Fixes
+
+* update permissions for opencode in github workflow ([8882e7c](https://github.com/dcplibrary/test/commit/8882e7cba0c0c400795ff588d8400ab44b1f2d21))
+
 ## [1.1.1](https://github.com/dcplibrary/test/compare/v1.1.0...v1.1.1) (2026-03-27)
 
 

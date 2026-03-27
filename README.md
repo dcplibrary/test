@@ -81,4 +81,4 @@ MIT — see [LICENSE](LICENSE) for details.
 ## Author
 
 **Brian Lashbrook** <blashbrook@dcplibrary.org>
-Denver Public Library — <https://www.dcplibrary.org>
+Daviess County Public Library — <https://www.dcplibrary.org>

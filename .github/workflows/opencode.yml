@@ -27,7 +27,7 @@ jobs:
 
       - name: Create opencode config
         run: |
-          echo '{"$schema":"https://opencode.ai/config.json","provider":{"lmstudio":{"npm":"@ai-sdk/openai-compatible","name":"LM Studio","options":{"baseURL":"${{ secrets.LMSTUDIO_BASE_URL }}"},"models":{"qwen-vl-7b":{"name":"qwen/qwen2.5-vl-7b"}}}}}' > opencode.json
+          echo '{"$schema":"https://opencode.ai/config.json","provider":{"lmstudio":{"npm":"@ai-sdk/openai-compatible","name":"LM Studio","options":{"baseURL":"${{ secrets.LMSTUDIO_BASE_URL }}"},"models":{"qwen-coder-14b":{"name":"qwen/qwen2.5-coder-14b"}}}}}' > opencode.json
 
       - name: Debug - show config
         run: cat opencode.json && echo ""
@@ -37,4 +37,4 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.LMSTUDIO_API_KEY }}
         with:
-          model: lmstudio/qwen-vl-7b
+          model: lmstudio/qwen-coder-14b

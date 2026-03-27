@@ -36,6 +36,11 @@ jobs:
                 "name": "LM Studio (ngrok)",
                 "options": {
                   "baseURL": "${{ secrets.LMSTUDIO_BASE_URL }}"
+                },
+                "models": {
+                  "qwen35-9b": {
+                    "name": "qwen/qwen3.5-9b"
+                  }
                 }
               }
             }
@@ -47,4 +52,4 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.LMSTUDIO_API_KEY }}
         with:
-          model: lmstudio/local
+          model: lmstudio/qwen35-9b

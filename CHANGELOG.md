@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/dcplibrary/test/compare/v1.0.3...v1.0.4) (2026-03-26)
+
+
+### Bug Fixes
+
+* upgrade node ([3254a8c](https://github.com/dcplibrary/test/commit/3254a8c8ce04243a7fec4bc736dbf3bd21942afa))
+
 ## [1.0.3](https://github.com/dcplibrary/test/compare/v1.0.2...v1.0.3) (2026-03-26)
 
 

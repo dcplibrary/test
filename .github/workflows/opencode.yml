@@ -27,18 +27,18 @@ jobs:
 
       - name: Create opencode config
         run: |
-          cat > opencode.json << 'EOF'
+          cat > opencode.json << EOF
           {
-            "$schema": "https://opencode.ai/config.json",
+            "\$schema": "https://opencode.ai/config.json",
             "provider": {
               "lmstudio": {
                 "npm": "@ai-sdk/openai-compatible",
-                "name": "LM Studio (ngrok)",
+                "name": "LM Studio",
                 "options": {
                   "baseURL": "${{ secrets.LMSTUDIO_BASE_URL }}"
                 },
                 "models": {
-                  "qwen35-9b": {
+                  "qwen35": {
                     "name": "qwen/qwen3.5-9b"
                   }
                 }
@@ -52,4 +52,4 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.LMSTUDIO_API_KEY }}
         with:
-          model: lmstudio/qwen35-9b
+          model: lmstudio/qwen35

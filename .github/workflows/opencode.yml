@@ -25,9 +25,26 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Create opencode config
+        run: |
+          cat > opencode.json << 'EOF'
+          {
+            "$schema": "https://opencode.ai/config.json",
+            "provider": {
+              "lmstudio": {
+                "npm": "@ai-sdk/openai-compatible",
+                "name": "LM Studio (ngrok)",
+                "options": {
+                  "baseURL": "${{ secrets.LMSTUDIO_BASE_URL }}"
+                }
+              }
+            }
+          }
+          EOF
+
       - name: Run opencode
         uses: anomalyco/opencode/github@latest
         env:
-          LMSTUDIO_API_KEY: ${{ secrets.LMSTUDIO_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.LMSTUDIO_API_KEY }}
         with:
-          model: lmstudio/qwen/qwen3-coder-30b
+          model: lmstudio/local
